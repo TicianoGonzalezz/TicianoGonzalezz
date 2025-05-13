@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Escolar - Escuela Nova</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Escuela Nova</h1>
+    <p>Gestión de estudiantes</p>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Agregar Estudiante</h2>
+      <form id="formEstudiante">
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input type="text" id="grado" placeholder="Grado (ej: 5to A)" required />
+        <input type="number" id="edad" placeholder="Edad" required min="3" max="100" />
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>Lista de Estudiantes</h2>
+      <ul id="listaEstudiantes"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Escuela Nova - Sistema desarrollado por Ticiano Gonzalez</p>
+  </footer>
+
+  <script src="funciones.js"></script>
+</body>
+</html>
